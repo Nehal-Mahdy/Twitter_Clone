@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweeter Login</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/login.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/xicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/dbb93f799b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <div class="main-wrapper">
+      <div id="pic">
+        <img
+          id="twitterImg"
+          src="./img/twittercover.png"
+          alt="photo of twitter"
+        />
+      </div>
+      <div class="mainContent">
+        <div>
+          <img id="icon" src="./img/logo.png" alt="twitter's icon" />
+          <h1 class="happening">Happening now</h1>
+          <h2>Join Twitter Today.</h2>
+          <button id="btnCreate" type="button">Create Account</button>
+          <span class="warn"
+            >By signing up, you agree to the
+            <a href="#">Terms of Service </a> and
+            <a href="#"> Privacy Policy.</a></span
+          >
+        </div>
+        <div id="signSec">
+          <h4>Already have an Account?</h4>
+          <button id="btnSignin" type="button">Sign in</button>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">About</a>
+        </li>
+        <li>
+          <a href="#">Help Center</a>
+        </li>
+        <li>
+          <a href="#">Terms Of service</a>
+        </li>
+        <li>
+          <a href="#">Privacy Policy</a>
+        </li>
+        <li>
+          <a href="#">Accessibility</a>
+        </li>
+        <li>
+          <a href="#">Blog</a>
+        </li>
+        <li>
+          <a href="#">Status</a>
+        </li>
+        <li>
+          <a href="#">Advertising</a>
+        </li>
+        <li>
+          <a href="#">Marketing</a>
+        </li>
+        <li>
+          <a href="#">Twitter for Business</a>
+        </li>
+        <li>
+          <a href="#">Developers</a>
+        </li>
+        <li>
+          <a href="#">Settings</a>
+        </li>
+      </ul>
+      <h5 style="margin: 0px">2023 &#169; ITI G3 - All rights reserved</h5>
+    </footer>
+
+    <div id="overlay-background"></div>
+    <div id="createForm">
+      <i class="far fa-window-close exit-icon"></i>
+      <h2>Create your account</h2>
+      <form class="create-account">
+        <input
+          type="text"
+          name="name"
+          placeholder="Full Name"
+          class="fullname"
+          id="fullName"
+          required
+        />
+        <span id="invalidFullName" style="display: none">
+          invalid full name
+        </span>
+        <input
+          type="text"
+          name="name"
+          placeholder="Your username"
+          class="userName"
+          id="registerUserName"
+          required
+        />
+        <span id="invalidUserName" style="display: none">
+          Already used, try another user name
+        </span>
+        <input
+          type="password"
+          name="password"
+          id="registerPassword"
+          placeholder="Enter your password"
+          required
+        />
+        <span id="invalidPass" style="display: none"
+          >Minimum eight characters, at least one letter and one number</span
+        >
+        <input type="submit" value="Create Account" id="signUp" />
+      </form>
+    </div>
+    <div id="loginForm">
+      <i class="far fa-window-close exit-icon"></i>
+      <h2>Log in to your account</h2>
+      <form class="create-account">
+        <input
+          type="text"
+          name="name"
+          placeholder="Your username"
+          class="userName"
+          id="loginUserName"
+          required
+        />
+        <input
+          type="password"
+          name="password"
+          id="loginPassword"
+          placeholder="Enter your password"
+          required
+        />
+        <input type="submit" value="Sign in" id="singIn" />
+        <span id="invalid" style="display: none">
+          Invalid username or password, please try again
+        </span>
+      </form>
+    </div>
+    <script src="./js/index.js" type="module"></script>
+    <script type="module" src="./test.js"></script>
+  </body>
+</html>

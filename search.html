@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Search</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/search.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/xicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/dbb93f799b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header (left sidebar)-->
+    <header id="headerContainer"></header>
+    <!--Main content (center)-->
+    <main>
+      <!--Search form and selection (users or tweets)-->
+      <div class="search-header">
+        <span>
+          <span><i class="fas fa-search search"></i></span>
+          <input type="text" placeholder="search tweeter" required />
+        </span>
+        <div class="search-select">
+          <input type="radio" name="searchSelect" id="users" />
+          <label for="users"> Users</label>
+          <input type="radio" name="searchSelect" id="Tweets" />
+          <label for="Tweets"> Tweets</label>
+        </div>
+      </div>
+      <!--search result container-->
+      <div class="search-result"></div>
+    </main>
+    <!--Right sidebar-->
+    <aside id="sideBarContainer"></aside>
+    <script type="module" src="./js/general.js"></script>
+    <script type="module" src="./js/search.js"></script>
+  </body>
+</html>

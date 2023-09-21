@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./img/xicon.png" type="image/x-icon" />
+    <script
+      src="https://kit.fontawesome.com/dbb93f799b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header (left sidebar)-->
+    <header id="headerContainer"></header>
+    <!--Main content (center)-->
+    <main>
+      <!--Page title-->
+      <div class="page-title"><h2>Home</h2></div>
+      <!--form to write a tweet-->
+      <div class="tweet-box">
+        <img
+          src="./img/avatar.png"
+          alt="user avatar"
+          class="user-avatar current-user-img"
+        />
+        <form>
+          <textarea
+            name="writeTweet"
+            id="writeTweet"
+            placeholder="What is happening?!"
+          ></textarea>
+          <input type="submit" class="tweetSubmit" id="tweedAdd" value="Tweet" />
+        </form>
+      </div>
+      <!-- lsit of tweets-->
+      <div class="tweets-mainContainer"></div>
+    </main>
+    <!--Right sidebar-->
+    <aside id="sideBarContainer"></aside>
+    <script type="module" src="./js/general.js"></script>
+    <script type="module" src="./js/home.js"></script>
+  </body>
+</html>

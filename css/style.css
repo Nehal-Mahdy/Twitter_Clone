@@ -1,0 +1,377 @@
+* {
+  font-family: raleway, sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+:root {
+  --primary: rgb(29, 155, 240);
+  --secondary: #d4deec;
+  --darkBlack: rgb(15, 20, 25);
+  --light: #f8f9fc;
+}
+
+body {
+  padding: 0 40px;
+  display: flex;
+}
+.user-header {
+  display: flex;
+  align-items: center;
+}
+.user-header .back {
+  margin-right: 20px;
+  padding: 15px;
+}
+.user-header .back:hover {
+  background-color: var(--secondary);
+  border-radius: 50px;
+  cursor: pointer;
+}
+
+/*---------------------------scroll bar style---------------------------*/
+::-webkit-scrollbar,
+iframe body::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track-piece,
+iframe body::-webkit-scrollbar-track {
+  background-color: #d4deec;
+}
+::-webkit-scrollbar-thumb:vertical,
+iframe body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--secondary);
+}
+/*---------------------------Header style---------------------------*/
+header {
+  width: 20%;
+  position: relative;
+}
+header .wrapper {
+  position: sticky;
+  padding: 0 0 20px 0;
+  top: 0;
+}
+
+header .nav-menu {
+  list-style-type: none;
+  margin-top: -20px;
+}
+header .nav-menu li a {
+  display: inline-block;
+  color: var(--darkBlack);
+  font-size: 20px;
+  padding: 8px 20px 8px 10px;
+  margin-top: 5px;
+}
+
+header .nav-menu li a:hover {
+  background-color: var(--secondary);
+  border-radius: 50px;
+}
+header .nav-menu li a i {
+  margin-right: 15px;
+}
+header .tweetBtn {
+  display: inline-block;
+  margin-top: 10px;
+  width: 80%;
+  border: none;
+  padding: 10px;
+  text-align: center;
+  border-radius: 50px;
+  font-size: 20px;
+  color: white;
+  background-color: var(--primary);
+  font-weight: 600;
+}
+.tweetBtn:hover {
+  background-color: var(--darkBlack);
+  cursor: pointer;
+}
+.user-info {
+  display: flex;
+  height: 60px;
+  padding: 10px;
+  margin-right: 20px;
+}
+.full-name {
+  max-width: 180px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.user-name {
+  font-weight: 400;
+  max-width: 150px;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.user-info img {
+  border-radius: 100px;
+  margin-right: 10px;
+}
+.sign-out {
+  font-size: 20px;
+  margin: 0 0 0 20px;
+  padding: 10px 15px;
+  width: 150px;
+  text-align: center;
+  border-radius: 50px;
+}
+.sign-out:hover {
+  background-color: var(--secondary);
+  cursor: pointer;
+}
+
+/*--------------------------- main section style ---------------------------*/
+main {
+  width: 50%;
+  border-right: 2px solid var(--light);
+  border-left: 2px solid var(--light);
+  padding-bottom: 50px;
+}
+main .page-title,
+.search-header {
+  padding: 20px;
+  position: sticky;
+  top: 0;
+  background-color: white;
+  z-index: 100;
+  box-shadow: 0 10px 30px -20px var(--secondary);
+}
+.tweet-box {
+  margin-top: 10px;
+  display: flex;
+  padding: 20px;
+  margin-bottom: 30px;
+}
+.tweet-box form {
+  flex-grow: 1;
+  position: relative;
+}
+.tweet-box form textarea {
+  outline: none;
+  display: block;
+  width: 100%;
+  resize: none;
+  font-size: 18px;
+  min-height: 100px;
+  line-height: 1.5em;
+  border: none;
+  border-bottom: 2px solid var(--light);
+}
+.tweet-box .tweetSubmit {
+  position: absolute;
+  padding: 10px 20px;
+  bottom: -40px;
+  right: 0px;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: var(--secondary);
+  font-weight: 600;
+}
+.tweet-box .tweetSubmit:hover {
+  background-color: var(--primary);
+  cursor: pointer;
+}
+.tweet-wrapper {
+  display: flex;
+  padding: 20px 10px;
+  border-bottom: 2px solid var(--light);
+}
+.tweet-wrapper:hover {
+  background-color: var(--light);
+}
+.tweet-wrapper .tweet-content {
+  cursor: pointer;
+}
+.tweet-wrapper .fa-trash {
+  position: absolute;
+  font-size: 20px;
+  right: 10px;
+  color: red;
+  display: none;
+}
+.tweet-wrapper .fa-trash:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+.tweet-wrapper .trash {
+  display: inline-block;
+}
+.tweet-wrapper .fa-pen-to-square {
+  position: absolute;
+  font-size: 20px;
+  right: 50px;
+  color: green;
+  display: none;
+}
+.tweet-wrapper .fa-pen-to-square:hover {
+  cursor: pointer;
+  scale: 1.2;
+}
+.tweet-wrapper .edit {
+  display: inline-block;
+}
+
+.tweet-container {
+  flex-grow: 1;
+}
+.tweet-header {
+  display: flex;
+  padding-bottom: 10px;
+  position: relative;
+}
+.tweet-header h4 {
+  margin-right: 10px;
+}
+.tweet-content {
+  line-height: 1.5;
+}
+.tweet-footer {
+  padding: 10px 20px;
+  display: flex;
+  justify-content: center;
+}
+.tweet-footer i {
+  font-weight: bold;
+  padding: 0 30px;
+}
+.tweet-footer i:hover {
+  cursor: pointer;
+}
+.tweet-footer i span {
+  margin-left: 5px;
+}
+/*--------------------------- sidebar style ---------------------------*/
+aside {
+  width: 30%;
+  position: relative;
+  padding: 0 10px;
+}
+aside .wrapper {
+  padding: 20px 0;
+  position: sticky;
+  top: 0;
+}
+aside .wrapper > div {
+  margin-bottom: 20px;
+}
+aside div.colored {
+  background-color: var(--light);
+  border-radius: 20px;
+}
+aside div.colored > h2,
+aside div.colored > h4 {
+  padding: 15px 15px 10px;
+}
+aside .verfiyBtn {
+  padding: 10px 20px;
+  margin: 15px 0 15px 15px;
+  font-size: 15px;
+  font-weight: bold;
+  border: none;
+  border-radius: 50px;
+  color: white;
+  background-color: var(--darkBlack);
+}
+
+.userContainer {
+  display: flex;
+  padding: 10px;
+  justify-content: space-between;
+}
+.userContainer:hover {
+  background-color: var(--secondary);
+}
+.user-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.user-avatar:hover,
+.user-fullname:hover {
+  cursor: pointer;
+}
+.userContainer .user-info {
+  vertical-align: top;
+  display: flex;
+  align-items: center;
+}
+
+.userContainer .follow-ing-btn {
+  align-self: center;
+  padding: 10px 15px;
+  font-size: 15px;
+  border-radius: 50px;
+  font-weight: bold;
+  border: none;
+  color: white;
+  background-color: var(--darkBlack);
+  scale: 0.9;
+}
+
+.userContainer .follow-ing-btn:hover {
+  cursor: pointer;
+  scale: 1;
+}
+aside .footer a {
+  margin-right: 15px;
+  color: var(--darkBlack);
+  /* line-height: 1.5; */
+}
+aside .copy-right {
+  text-align: center;
+  font-weight: 600;
+}
+/*--------------------------- Tweet edit form ---------------------------*/
+#overlay-background {
+  content: "";
+  background-color: var(--darkBlack);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
+  width: 100%;
+  height: 100%;
+  opacity: 0.5;
+  z-index: 999;
+}
+#tweetEdit {
+  position: relative;
+  background-color: white;
+  position: fixed;
+  display: none;
+  left: calc(50% - 250px);
+  width: 500px;
+  border: 3px;
+  padding: 20px;
+  background-color: white;
+  border-radius: 20px;
+  z-index: 999;
+  top: calc(50% - 150px);
+  height: 300px;
+}
+#tweetEdit .tweet-box {
+  margin-top: 40px;
+}
+.exit-icon {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  scale: 2;
+}
+.exit-icon:hover {
+  cursor: pointer;
+}

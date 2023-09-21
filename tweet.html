@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Tweet</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="shortcut icon" href="./img/xicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dbb93f799b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header (left sidebar)-->
+    <header id="headerContainer"></header>
+    <!--Main content (center)-->
+    <main>
+      <!--Page title-->
+      <div class="page-title user-header">
+        <i class="fa-solid fa-arrow-left back"></i>
+        <h2>Tweet</h2>
+      </div>
+      <!--Current tweet content-->
+      <div class="current-tweet"></div>
+      <!--form to write a tweet or comment-->
+      <div class="tweet-box">
+        <img
+          src="./img/avatar.png"
+          alt="user avatar"
+          class="user-avatar current-user-img"
+        />
+        <form>
+          <textarea
+            name="writeReply"
+            id="writeReply"
+            placeholder="Tweet your reply!"
+          ></textarea>
+          <input
+            type="submit"
+            class="tweetSubmit"
+            id="replySubmit"
+            value="Tweet"
+          />
+        </form>
+      </div>
+      <!-- list of tweet comments-->
+      <div class="tweet-reply-container"></div>
+    </main>
+    <!--Right sidebar-->
+    <aside id="sideBarContainer"></aside>
+    <script type="module" src="./js/general.js"></script>
+    <script type="module" src="./js/tweet.js"></script>
+  </body>
+</html>

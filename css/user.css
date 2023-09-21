@@ -1,0 +1,85 @@
+.user-profile-bg {
+  height: 200px;
+  background: url("../img/profile-bg.png") no-repeat top right;
+  background-size: cover;
+  position: relative;
+}
+.user-profile-bg .profile-bg {
+  width: 100%;
+  height: 100%;
+}
+.user-profile-bg .profile-avatar {
+  padding: 5px;
+  background-color: white;
+  position: absolute;
+  left: 30px;
+  width: 150px;
+  height: 150px;
+  bottom: -75px;
+  border-radius: 100px;
+  box-shadow: 0 10px 20px -10px #11111165;
+}
+.profile-edit {
+  text-align: right;
+  padding: 15px;
+}
+.profile-edit button {
+  padding: 10px 20px;
+  width: 120px;
+  height: 40px;
+  background-color: var(--light);
+  border: 2px solid var(--secondary);
+  font-weight: bold;
+  border-radius: 50px;
+}
+.profile-edit .followingBtn,
+.profile-edit .followBtn {
+  color: white;
+  background-color: var(--darkBlack);
+  scale: 0.9;
+}
+.profile-edit button:hover {
+  background-color: var(--primary);
+  color: white;
+  scale: 1;
+  cursor: pointer;
+}
+.profile-info {
+  margin-top: 30px;
+  padding: 15px;
+}
+.profile-info .user-name {
+  max-width: 300px;
+}
+.profile-info .user-bio {
+  padding: 15px 0;
+}
+.profile-info .user-twoBtn {
+  background-color: transparent;
+  border: none;
+  padding: 10px;
+  font-size: 18px;
+  color: var(--darkBlack);
+}
+.profile-info .user-twoBtn:hover {
+  border-bottom: 2px solid var(--primary);
+}
+.profile-info .user-twoBtn span {
+  font-weight: bold;
+  margin-right: 10px;
+}
+.profile-menu {
+  padding: 10px;
+  margin-top: 5px;
+  border-top: 2px solid var(--light);
+  border-bottom: 2px solid var(--light);
+  display: flex;
+  justify-content: space-around;
+  font-weight: 600;
+}
+.profile-menu a {
+  color: var(--darkBlack);
+}
+.user-follow-container h3 {
+  padding: 15px;
+}

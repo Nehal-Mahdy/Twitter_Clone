@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Profile</title>
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="./css/user.css" />
+    <link rel="shortcut icon" href="./img/xicon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@200;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <script
+      src="https://kit.fontawesome.com/dbb93f799b.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- header (left sidebar)-->
+    <header id="headerContainer"></header>
+    <!--Main content (center)-->
+    <main>
+      <!--page title-->
+      <div class="page-title user-header">
+        <i class="fa-solid fa-arrow-left back"></i>
+        <h2></h2>
+      </div>
+      <div class="user-profile-bg">
+        <img
+          src="./img/profile-bg.png"
+          alt="profile background"
+          class="profile-bg"
+        />
+        <img
+          src="./img/avatar.png"
+          alt="profile avatar"
+          class="profile-avatar"
+        />
+      </div>
+      <div class="profile-edit">
+        <button class="profile-page-btn"></button>
+      </div>
+      <!--user info like name, bio, username-->
+      <div class="profile-info">
+        <h3 class="Full-name"></h3>
+        <h4 class="user-name"></h4>
+        <p class="user-bio"></p>
+        <div class="followerBtns">
+          <a href="./following.html" class="user-following user-twoBtn">
+            <span class="following-count"></span>Following
+          </a>
+          <a href="./followers.html" class="user-followers user-twoBtn">
+            <span class="followers-count"></span>Followers
+          </a>
+        </div>
+      </div>
+      <div class="profile-menu">
+        <a href="#">Tweets</a><a href="#">Replies</a><a href="#">Highlights</a
+        ><a href="#">Likes</a><a href="#">Media</a>
+      </div>
+      <!--list of tweets written by the user-->
+      <div class="tweets-mainContainer"></div>
+    </main>
+    <!--Right sidebar-->
+    <aside id="sideBarContainer"></aside>
+    <script type="module" src="./js/general.js"></script>
+    <script type="module" src="./js/user.js"></script>
+  </body>
+</html>
